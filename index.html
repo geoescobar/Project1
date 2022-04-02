@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Concert Page</title>
+    <!-- The link down below links us to MaterializeCSS-->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!--Created Header tag-->
+    <!--Down below we created a Logo name on the right side and 3 li tags with links-->
+    <header>
+        <nav class="header">
+            <div class="nav-wrapper deep-orange">
+                <a href="#" class="brand-logo">Weather Concert Page</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="sass.html">Concert</a></li>
+                    <li><a href="badges.html">Weather</a></li>
+                    <li><a href="collapsible.html">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <h1 id="title-title" class="homepage-title">Search for concerts in your city!</h1>
+
+    <div class="nav-wrapper">
+        <a class="waves-effect waves-light btn-large deep-orange"><i class="material-icons left">cloud</i>Weather</a>
+        <a class="waves-effect waves-light btn-large deep-orange"><i class="material-icons left">music_note</i>Concerts</a>
+        <a class="waves-effect waves-light btn-large deep-orange"><i class="material-icons left">favorite</i>Favorites</a>
+        <nav>
+
+            <form>
+                <div class="input-field deep-orange">
+                    <!--we created Search Bar where we will search for citys-->
+                    <input id="search" type="search" required>
+                    <label id="input-text" class="label-icon" for="search"><i class="material-icons">search</i></label>
+                    <i class="material-icons">cancel</i>
+                </div>
+            </form>
+        </nav>
+    </div>
+
+    <!-- The link down belowlinks us to MaterialCSS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--The Link down below links us to our JavaScript Page-->
+    <script src="script.js"></script>
+</body>
+
+</html>
