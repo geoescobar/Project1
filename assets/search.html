@@ -18,43 +18,49 @@
     />
   </head>
 
-  <!-- start of the body -->
+<!-- body starts here -->
   <body>
-    <!-- logo in the header -->
-    <header>
-      <img class="logo" src="./Titan_Tickets.png" />
-    </header>
-
-    <!-- title for the website -->
     <div>
       <div>
-        <h2 id="title" class="homepage-title">Explore your city!</h2>
+        <h1 id="concerts-title" class="title">Concerts</h1>
       </div>
       <div>
-        <p class="description">
-          Hit the concerts tab, and search your city to see plan your next
-          concert trip!
-        </p>
+        <p class="title-contents">Explore events & details</p>
       </div>
     </div>
 
-    <!-- search tabs  -->
-    <div>
-      <a class="concerts" href="./concerts.html">Search</a>
-      <a class="about" href="./about.html">About</a>
-    </div>
 
-<!-- github link -->
-    <footer>
-      <ul class="social">
-        <li>
-          <a href="https://github.com/geoescobar" target="_blank">GitHub</a>
-        </li>
-      </ul>
-    </footer>
+<!-- tab buttons -->
+<div>  
+    <a class="back-home" href="./index.html">Home</a>
+    <a class="favorites" href="./favorites.html">Favorites</a>
+    <a class="about" href="./about.html">About</a>
+</div>
 
-    <!-- video background -->
-    <video class="video" src="dj-headphones.mp4" muted loop autoplay></video>
+
+          <!-- search bar  -->
+            <form id="search-form" class="example">
+              <div id="search-bar">
+               <input id="search-input" type="text" placeholder="Search city.." name="search">
+              </div>
+            </form>
+         
+        
+
+    <!-- cards displaying information in row format  -->
+          <div id="cards" class="row"></div>
+
+
+
+
+
+
+
+
+
+<!-- video background  -->
+          <!-- <video class="video" src="dj-headphones.mp4" muted loop autoplay></video> -->
+
 
     <!-- jQuery link -->
     <script
@@ -62,6 +68,8 @@
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
       crossorigin="anonymous"
     ></script>
+    <!-- font awesome -->
+    <script src="https://use.fontawesome.com/e9219c1b6e.js"></script>
     <!-- The link down belowlinks us to MaterialCSS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!--The Link down below links us to our JavaScript Page-->

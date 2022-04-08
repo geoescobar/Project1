@@ -18,43 +18,38 @@
     />
   </head>
 
-  <!-- start of the body -->
+  <!-- body starts here -->
   <body>
-    <!-- logo in the header -->
-    <header>
-      <img class="logo" src="./Titan_Tickets.png" />
-    </header>
-
-    <!-- title for the website -->
+    <!-- header and paragraph  -->
     <div>
       <div>
-        <h2 id="title" class="homepage-title">Explore your city!</h2>
+        <h1 id="favorites-title" class="title">Favorites!</h1>
       </div>
       <div>
-        <p class="description">
-          Hit the concerts tab, and search your city to see plan your next
-          concert trip!
+        <p class="title-contents">
+          Here are your recent favorites. Don't forget to secure your tickets
+          before they are sold out!
         </p>
       </div>
     </div>
 
-    <!-- search tabs  -->
-    <div>
+    <!-- tab buttons -->
+    <div class="buttons">
+      <a class="back-home" href="./index.html">Home</a>
       <a class="concerts" href="./concerts.html">Search</a>
       <a class="about" href="./about.html">About</a>
     </div>
 
-<!-- github link -->
-    <footer>
-      <ul class="social">
-        <li>
-          <a href="https://github.com/geoescobar" target="_blank">GitHub</a>
-        </li>
+    <!-- favorites container  -->
+    <div class="fav-container">
+      <ul id="fav-list" class="ul-list">
+        <li class="list-items">No favorites</li>
+
       </ul>
-    </footer>
+    </div>
 
     <!-- video background -->
-    <video class="video" src="dj-headphones.mp4" muted loop autoplay></video>
+    <!-- <video class="video" src="dj-headphones.mp4" muted loop autoplay></video> -->
 
     <!-- jQuery link -->
     <script
@@ -66,5 +61,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!--The Link down below links us to our JavaScript Page-->
     <script src="./script.js"></script>
+   <!-- favorite js file -->
+   <script src="./favorites.js"></script>
   </body>
 </html>
