@@ -16,18 +16,27 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+
+    <link rel=“preconnect” href=“https://fonts.googleapis.com”>
+        <link rel=“preconnect” href=“https://fonts.gstatic.com” crossorigin>
+        <link href=“https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap” rel=“stylesheet”>
   </head>
 
   <!-- start of the body -->
   <body>
     <!-- logo in the header -->
     <header>
-      <img class="logo" src="./Titan_Tickets.png" />
+      <div class="logo">
+        <a href="./index.html"><img class="logo" src="./Titan_Tickets.png" /></a>
+      </div>
     </header>
 
     <!-- title for the website -->
-    <div>
+    <div class="title-elements">
       <div>
+        <link rel=“preconnect” href=“https://fonts.googleapis.com”>
+        <link rel=“preconnect” href=“https://fonts.gstatic.com” crossorigin>
+        <link href=“https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap” rel=“stylesheet”>
         <h2 id="title" class="homepage-title">Explore your city!</h2>
       </div>
       <div>
@@ -39,19 +48,12 @@
     </div>
 
     <!-- search tabs  -->
-    <div>
-      <a class="concerts" href="./concerts.html">Search</a>
-      <a class="about" href="./about.html">About</a>
+    <div class="btn-container">
+        <a class="search" href="./concerts.html">Search</a>
+
+        <a class="about" href="./about.html">About</a>
     </div>
 
-<!-- github link -->
-    <footer>
-      <ul class="social">
-        <li>
-          <a href="https://github.com/geoescobar" target="_blank">GitHub</a>
-        </li>
-      </ul>
-    </footer>
 
     <!-- video background -->
     <video class="video" src="dj-headphones.mp4" muted loop autoplay></video>
