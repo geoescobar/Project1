@@ -77,8 +77,9 @@ function loadConcertInfo(cityName) {
 
         icon.addEventListener('click', (event) => {
           const cardContent = event.target.parentElement.parentElement.parentElement.children[1];
+          console.log(cardContent);
           const favEvent = cardContent.children[0].innerText;
-          const favEventLink = cardContent.children[4].getAttribute('href');
+          const favEventLink = cardContent.children[5].getAttribute('href');
           
           if (localStorage.getItem('favArray')){
             const favArray = JSON.parse(localStorage.getItem('favArray'));
