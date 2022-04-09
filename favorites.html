@@ -18,49 +18,47 @@
     />
   </head>
 
-<!-- body starts here -->
+  <!-- body starts here -->
   <body>
+
+     <!-- logo in the header -->
+     <header>
+      <div class="logo">
+        <a href="./index.html"><img class="logo" src="./Titan_Tickets.png" /></a>
+      </div>
+    </header>
+
+
+    <!-- header and paragraph  -->
     <div>
       <div>
-        <h1 id="concerts-title" class="title">Concerts</h1>
+        <h1 id="favorites-title" class="title">FAVORITES</h1>
       </div>
       <div>
-        <p class="title-contents">Explore events & details</p>
+        <p class="title-contents">
+          Here are your recent favorites. Don't forget to secure your tickets
+          before they are sold out!
+        </p>
       </div>
     </div>
 
+    <!-- tab buttons -->
+    <div class="btn-container">
+      <a class="home" href="./index.html">Home</a>
+      <a class="search" href="./concerts.html">Search</a>
+      <a class="about" href="./about.html">About</a>
+    </div>
 
-<!-- tab buttons -->
-<div>  
-    <a class="back-home" href="./index.html">Home</a>
-    <a class="favorites" href="./favorites.html">Favorites</a>
-    <a class="about" href="./about.html">About</a>
-</div>
+    <!-- favorites container  -->
+    <div class="fav-container">
+      <ul id="fav-list" class="ul-list">
+        <li class="list-items">No favorites</li>
 
+      </ul>
+    </div>
 
-          <!-- search bar  -->
-            <form id="search-form" class="example">
-              <div id="search-bar">
-               <input id="search-input" type="text" placeholder="Search city.." name="search">
-              </div>
-            </form>
-         
-        
-
-    <!-- cards displaying information in row format  -->
-          <div id="cards" class="row"></div>
-
-
-
-
-
-
-
-
-
-<!-- video background  -->
-          <!-- <video class="video" src="dj-headphones.mp4" muted loop autoplay></video> -->
-
+    <!-- video background -->
+    <video class="video" src="dj-headphones.mp4" muted loop autoplay></video>
 
     <!-- jQuery link -->
     <script
@@ -68,11 +66,11 @@
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
       crossorigin="anonymous"
     ></script>
-    <!-- font awesome -->
-    <script src="https://use.fontawesome.com/e9219c1b6e.js"></script>
     <!-- The link down belowlinks us to MaterialCSS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!--The Link down below links us to our JavaScript Page-->
     <script src="./script.js"></script>
+   <!-- favorite js file -->
+   <script src="./favorites.js"></script>
   </body>
 </html>

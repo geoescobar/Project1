@@ -14,8 +14,13 @@ $(document).ready(function () {
   $(".tabs").tabs();
 });
 
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
 // variable styling
-cards.style.display = "none";
+// cards.style.display = "none";
 
 
 // search bar variable
@@ -65,14 +70,16 @@ function loadConcertInfo(cityName) {
           "waves-light",
           "red"
         );
+
         const icon = document.createElement("i");
         icon.classList.add("material-icons");
-        icon.textContent = "star";
+        icon.textContent = "favorite";
 
         icon.addEventListener('click', (event) => {
           const cardContent = event.target.parentElement.parentElement.parentElement.children[1];
+          console.log(cardContent);
           const favEvent = cardContent.children[0].innerText;
-          const favEventLink = cardContent.children[4].getAttribute('href');
+          const favEventLink = cardContent.children[5].getAttribute('href');
           
           if (localStorage.getItem('favArray')){
             const favArray = JSON.parse(localStorage.getItem('favArray'));
@@ -117,6 +124,12 @@ function loadConcertInfo(cityName) {
 // appending card content 
         contentDiv.appendChild(eventTitle);
         contentDiv.appendChild(eventDate);
+        if (data._embedded.events[i].priceRanges) {
+          var priceRange = document.createElement("p");
+          priceRange.classList.add('price-range');
+          priceRange.textContent = 'Price Range: $' +  data._embedded.events[i].priceRanges[0].min.toFixed(2) + '-$' + data._embedded.events[i].priceRanges[0].max.toFixed(2);
+          contentDiv.appendChild(priceRange);
+        } 
         contentDiv.appendChild(eventVenue);
         contentDiv.appendChild(eventGenre);
         contentDiv.appendChild(ticket);
@@ -146,7 +159,7 @@ function loadConcertInfo(cityName) {
             console.log(data);
             // console.log(data.Similar.Info[0].Name);
             // console.log(data.Similar.Results[0].Name);
-            for (i = 0; i<5; i++) {
+            for (i = 0; i<10; i++) {
               //creating similar artists elements 
               let similarDiv = document.createElement('div');
               similarDiv.classList.add('similar-artist-container');
@@ -171,3 +184,4 @@ function loadConcertInfo(cityName) {
 
 // similar artist api key
 var apiKeyTwo = "434897-NextGenE-6XWPJHLE";
+
